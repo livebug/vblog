@@ -8,6 +8,9 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
+    "build-vblog": "vite build --base=/vblog/",
+    "push-vblog":"git subtree push --prefix dist origin gh-pages",
+    "build-push-vblog":"build-vblog && push-vblog",
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
