@@ -9,11 +9,12 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "build-vblog": "vite build --base=/vblog/",
-    "push-vblog":"git subtree push --prefix dist origin gh-pages",
-    "build-push-vblog":"build-vblog && push-vblog",
+    "push-vblog": "git subtree push --prefix dist origin gh-pages",
+    "build-push-vblog": "build-vblog && push-vblog",
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "ant-design-vue": "4.x",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
